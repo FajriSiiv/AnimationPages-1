@@ -8,7 +8,7 @@ var tl = gsap.timeline();
 tl.from(".jumper", { duration: 1, y: -100, opacity: 0 });
 //Button open overlay+about
 $(".btn-about").click(function () {
-  tl.to(".overlay", { duration: 0.5, x: 0, opacity: 1, zIndex: 9, scale: 1 });
+  tl.to(".overlay", { duration: 0.5, x: 0, opacity: 1, zIndex: 9});
   tl.to(".about", { duration: 0.5, x: 0, opacity: 1, display: "block" });
   tl.to(".about .strigger", { duration: 0.6, x: 0, stagger: 0.2, opacity: 1 }, "-=.3");
 });
@@ -22,7 +22,7 @@ $(".about .close").click(function () {
 
 //Button open overlay+service
 $(".btn-service").click(function () {
-  tl.to(".overlay", { duration: 0.5, x: 0, opacity: 1, zIndex: 9, scale: 1 });
+  tl.to(".overlay", { duration: 0.5, x: 0, opacity: 1, zIndex: 9 });
   tl.to(".services", { duration: 0.5, x: 0, opacity: 1, display: "block" });
   tl.to(".services .strigger", { duration: 0.6, x: 0, stagger: 0.2, opacity: 1 }, "-=.3");
 });
